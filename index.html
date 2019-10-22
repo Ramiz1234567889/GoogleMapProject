@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/popout.css">
+    <link href='https://fonts.googleapis.com/css?family=Cairo' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- app to render the map in -->
+    <div id="map"></div>
+
+    <div class="get-service-popout" id="openRegesterPopup">
+        <h3> بيانات الحجز</h3>
+        <form class="my-form" action="http://localhost:4500/register" method="POST">
+            <input type="text" name="name" placeholder="اسم العميل">
+            <input type="number" name="phone" placeholder="رقم الهاتف">
+            <input type="number" name="car_num" placeholder=" رقم لوحة السيارة">
+            <input type="text" name="car_type" placeholder="نوع السيارة">
+            <input type="submit" value="حجز">
+        </form>
+    </div>
+
+    <script src="./JS/Config.js"></script>
+    <script src="./JS/AddMarkers.js"></script>
+    <script src="./JS/SetupMap.js"></script>
+    <script src="./JS/script.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTanm_xZQi4_RHeCAxerOqXN96NUwrbZU&callback=initMap"></script>
+
+</body>
+
+</html>
